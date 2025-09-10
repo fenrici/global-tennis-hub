@@ -14,56 +14,69 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <span>Global Tennis Hub</span>
+                    <img src="logo.png" alt="Global Tennis Hub" class="nav-logo-img">
+                    <span class="nav-logo-text">Global Tennis Hub</span>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#argentina">Argentina</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+                <div class="nav-center">
+                    <ul class="desktop-menu">
+                        <li><a href="#inicio" data-translate="nav.home">Inicio</a></li>
+                        <li><a href="#argentina" data-translate="nav.argentina">Argentina</a></li>
+                        <li><a href="#servicios" data-translate="nav.services">Servicios</a></li>
+                        <li><a href="#contacto" data-translate="nav.contact">Contacto</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+                <div class="language-selector mobile-only">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
                 <div class="nav-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
+            <!-- Mobile Menu (outside nav-center) -->
+            <ul class="mobile-menu">
+                <li><a href="#inicio" data-translate="nav.home">Inicio</a></li>
+                <li><a href="#argentina" data-translate="nav.argentina">Argentina</a></li>
+                <li><a href="#servicios" data-translate="nav.services">Servicios</a></li>
+                <li><a href="#contacto" data-translate="nav.contact">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-background">
-            <div class="tennis-pattern"></div>
+            <div class="hero-image-bg"></div>
+            <div class="hero-overlay"></div>
         </div>
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Convierte tu pasión en <span class="highlight">profesión</span>
+                    <span data-translate="hero.title1">Convierte tu pasión en</span> <span class="highlight" data-translate="hero.title2">profesión</span>
                 </h1>
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-translate="hero.subtitle">
                     Llevamos jóvenes talentos a las mejores academias de tenis de Argentina. 
                     Todo incluido para que te enfoques solo en tu desarrollo profesional.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Estudiantes</div>
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label" data-translate="hero.stats.players">Jugadores</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Años</div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label" data-translate="hero.stats.years">Años en el mercado</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">95%</div>
-                        <div class="stat-label">Éxito</div>
+                        <div class="stat-label" data-translate="hero.stats.success">Éxito</div>
                     </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#argentina" class="btn btn-primary">
-                        <i class="fas fa-flag"></i>
-                        Programa Argentina
-                    </a>
                 </div>
             </div>
             <div class="hero-image">
@@ -81,13 +94,17 @@
 
     <!-- Argentina Section -->
     <section id="argentina" class="program-section argentina-section">
+        <div class="program-background">
+            <div class="program-image-bg"></div>
+            <div class="program-overlay"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <div class="flag argentina-flag">
                     <i class="fas fa-baseball"></i>
                 </div>
-                <h2>Programa Argentina - Blengino Academy</h2>
-                <p>Entrenamiento profesional en la Academia Blengino con preparación física en SportsLab</p>
+                <h2 data-translate="argentina.title">Programa Argentina - Blengino Academy</h2>
+                <p data-translate="argentina.subtitle">Entrenamiento profesional en la Academia Blengino con preparación física en SportsLab</p>
             </div>
             
             <div class="program-duration-grid">
@@ -96,25 +113,25 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="duration-header">
-                        <h3>2 Semanas</h3>
-                        <div class="duration-price">Consultar</div>
-                        <div class="duration-subtitle">Programa Intensivo</div>
+                        <h3 data-translate="programs.2weeks.title">2 Semanas</h3>
+                        <div class="duration-price" data-translate="programs.price">Consultar</div>
+                        <div class="duration-subtitle" data-translate="programs.2weeks.subtitle">Programa Intensivo</div>
                     </div>
                     <div class="duration-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Entrenamiento de tenis en Blengino Academy</li>
-                            <li><i class="fas fa-check"></i> Entrenamiento físico en SportsLab</li>
-                            <li><i class="fas fa-check"></i> Alojamiento en Palermo/Núñez</li>
-                            <li><i class="fas fa-check"></i> Coaching de tiempo completo</li>
-                            <li><i class="fas fa-check"></i> Preparación para torneos</li>
-                            <li><i class="fas fa-check"></i> Sesiones de estrategia personalizadas</li>
-                            <li><i class="fas fa-check"></i> Comidas incluidas</li>
-                            <li><i class="fas fa-check"></i> Programa integral de 55 horas</li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tennis">Entrenamiento de tenis en Blengino Academy</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.physical">Entrenamiento físico en SportsLab</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.accommodation">Alojamiento en Palermo/Núñez</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.coaching">Coaching de tiempo completo</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tournaments">Preparación para torneos</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.strategy">Sesiones de estrategia personalizadas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.meals">Comidas incluidas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.hours55">Programa integral de 55 horas</span></li>
                         </ul>
                     </div>
                     <button class="btn btn-duration">
                         <i class="fas fa-arrow-right"></i>
-                        Más Información
+                        <span data-translate="programs.moreInfo">Más Información</span>
                     </button>
                 </div>
                 
@@ -123,27 +140,27 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <div class="duration-header">
-                        <h3>1 Mes</h3>
-                        <div class="duration-price">Consultar</div>
-                        <div class="duration-subtitle">Programa Premium</div>
+                        <h3 data-translate="programs.1month.title">1 Mes</h3>
+                        <div class="duration-price" data-translate="programs.price">Consultar</div>
+                        <div class="duration-subtitle" data-translate="programs.1month.subtitle">Programa Premium</div>
                     </div>
                     <div class="duration-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Entrenamiento de tenis en Blengino Academy</li>
-                            <li><i class="fas fa-check"></i> Entrenamiento físico en SportsLab</li>
-                            <li><i class="fas fa-check"></i> Alojamiento en Palermo/Núñez</li>
-                            <li><i class="fas fa-check"></i> Coaching de tiempo completo</li>
-                            <li><i class="fas fa-check"></i> Preparación para torneos</li>
-                            <li><i class="fas fa-check"></i> Sesiones de estrategia personalizadas</li>
-                            <li><i class="fas fa-check"></i> Logística (transfers del aeropuerto)</li>
-                            <li><i class="fas fa-check"></i> Comidas incluidas</li>
-                            <li><i class="fas fa-check"></i> Nutricionista</li>
-                            <li><i class="fas fa-check"></i> Programa integral de 110 horas</li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tennis">Entrenamiento de tenis en Blengino Academy</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.physical">Entrenamiento físico en SportsLab</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.accommodation">Alojamiento en Palermo/Núñez</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.coaching">Coaching de tiempo completo</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tournaments">Preparación para torneos</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.strategy">Sesiones de estrategia personalizadas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.logistics">Logística (transfers del aeropuerto)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.meals">Comidas incluidas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.nutritionist">Nutricionista</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.hours110">Programa integral de 110 horas</span></li>
                         </ul>
                     </div>
                     <button class="btn btn-duration">
                         <i class="fas fa-arrow-right"></i>
-                        Más Información
+                        <span data-translate="programs.moreInfo">Más Información</span>
                     </button>
                 </div>
                 
@@ -152,25 +169,25 @@
                         <i class="fas fa-medal"></i>
                     </div>
                     <div class="duration-header">
-                        <h3>2 Meses</h3>
-                        <div class="duration-price">Consultar</div>
-                        <div class="duration-subtitle">Programa Elite</div>
+                        <h3 data-translate="programs.2months.title">2 Meses</h3>
+                        <div class="duration-price" data-translate="programs.price">Consultar</div>
+                        <div class="duration-subtitle" data-translate="programs.2months.subtitle">Programa Elite</div>
                     </div>
                     <div class="duration-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Entrenamiento de tenis en Blengino Academy</li>
-                            <li><i class="fas fa-check"></i> Entrenamiento físico en SportsLab</li>
-                            <li><i class="fas fa-check"></i> Alojamiento en Palermo/Núñez</li>
-                            <li><i class="fas fa-check"></i> Coaching de tiempo completo</li>
-                            <li><i class="fas fa-check"></i> Preparación para torneos</li>
-                            <li><i class="fas fa-check"></i> Sesiones de estrategia personalizadas</li>
-                            <li><i class="fas fa-check"></i> Comidas incluidas</li>
-                            <li><i class="fas fa-check"></i> Programa integral de 220 horas</li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tennis">Entrenamiento de tenis en Blengino Academy</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.physical">Entrenamiento físico en SportsLab</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.accommodation">Alojamiento en Palermo/Núñez</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.coaching">Coaching de tiempo completo</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.tournaments">Preparación para torneos</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.strategy">Sesiones de estrategia personalizadas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.meals">Comidas incluidas</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="programs.features.hours220">Programa integral de 220 horas</span></li>
                         </ul>
                     </div>
                     <button class="btn btn-duration">
                         <i class="fas fa-arrow-right"></i>
-                        Más Información
+                        <span data-translate="programs.moreInfo">Más Información</span>
                     </button>
                 </div>
             </div>
@@ -179,10 +196,14 @@
 
     <!-- Partners Section -->
     <section class="partners-section">
+        <div class="partners-background">
+            <div class="partners-image-bg"></div>
+            <div class="partners-overlay"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Socios Estratégicos</h2>
-                <p>Trabajamos con las mejores instituciones para garantizar tu desarrollo profesional</p>
+                <h2 data-translate="partners.title">Nuestros Socios Estratégicos</h2>
+                <p data-translate="partners.subtitle">Trabajamos con las mejores instituciones para garantizar tu desarrollo profesional</p>
             </div>
             
             <div class="partners-grid">
@@ -191,21 +212,21 @@
                         <img src="blengino.png" alt="Blengino Tennis Academy" class="partner-logo">
                     </div>
                     <div class="partner-content">
-                        <h3>Blengino Tennis Academy</h3>
-                        <p>Blengino Tennis es reconocida como una de las academias de tenis más prestigiosas de Argentina. Con una trayectoria marcada por la excelencia, la academia ha sido el lugar de entrenamiento de numerosos jugadores profesionales que alcanzaron el circuito ATP y WTA.</p>
-                        <p>Entre sus filas pasaron talentos de la talla de <strong>Guido Pella</strong>, <strong>Camilo Ugo Carabelli</strong>, <strong>Hugo Dellien</strong>, <strong>Tomás Etcheverry</strong>, y varios jugadores que llegaron a estar al mejor nivel del mundo, consolidando a la academia como un verdadero semillero de alto rendimiento.</p>
+                        <h3 data-translate="partners.blengino.title">Blengino Tennis Academy</h3>
+                        <p data-translate="partners.blengino.description1">Blengino Tennis es reconocida como una de las academias de tenis más prestigiosas de Argentina. Con una trayectoria marcada por la excelencia, la academia ha sido el lugar de entrenamiento de numerosos jugadores profesionales que alcanzaron el circuito ATP y WTA.</p>
+                        <p data-translate="partners.blengino.description2">Entre sus filas pasaron talentos de la talla de <strong>Guido Pella</strong>, <strong>Camilo Ugo Carabelli</strong>, <strong>Hugo Dellien</strong>, <strong>Tomás Etcheverry</strong>, y varios jugadores que llegaron a estar al mejor nivel del mundo, consolidando a la academia como un verdadero semillero de alto rendimiento.</p>
                         <div class="partner-features">
                             <div class="feature-tag">
                                 <i class="fas fa-trophy"></i>
-                                <span>Circuito ATP/WTA</span>
+                                <span data-translate="partners.blengino.features.atp">Circuito ATP/WTA</span>
                             </div>
                             <div class="feature-tag">
                                 <i class="fas fa-star"></i>
-                                <span>Alto Rendimiento</span>
+                                <span data-translate="partners.blengino.features.performance">Alto Rendimiento</span>
                             </div>
                             <div class="feature-tag">
                                 <i class="fas fa-medal"></i>
-                                <span>Excelencia</span>
+                                <span data-translate="partners.blengino.features.excellence">Excelencia</span>
                             </div>
                         </div>
                     </div>
@@ -216,21 +237,21 @@
                         <img src="sportslab.jpeg" alt="SportsLab" class="partner-logo">
                     </div>
                     <div class="partner-content">
-                        <h3>SportsLab</h3>
-                        <p>SportsLab se ha consolidado como la academia de preparación física más avanzada de Argentina, reconocida por su excelencia en entrenamiento deportivo de alto rendimiento. Con la última tecnología y metodologías de vanguardia, ofrece un enfoque integral que potencia la fuerza, resistencia, agilidad y recuperación de los jugadores.</p>
-                        <p>Muchos de los Top 100 del mundo que viven en Argentina confían en SportsLab para mantenerse en su mejor nivel competitivo. Entre ellos se encuentran <strong>Sebastián Báez</strong>, <strong>Francisco Cerúndolo</strong>, <strong>Hugo Dellien</strong>, <strong>Juan Manuel Cerúndolo</strong>, <strong>Diego Schwartzman</strong>, <strong>Cristian Garin</strong> y <strong>Juan Martín del Potro</strong>, consolidando su reputación como el centro de preparación física líder del país.</p>
+                        <h3 data-translate="partners.sportslab.title">SportsLab</h3>
+                        <p data-translate="partners.sportslab.description1">SportsLab se ha consolidado como la academia de preparación física más avanzada de Argentina, reconocida por su excelencia en entrenamiento deportivo de alto rendimiento. Con la última tecnología y metodologías de vanguardia, ofrece un enfoque integral que potencia la fuerza, resistencia, agilidad y recuperación de los jugadores.</p>
+                        <p data-translate="partners.sportslab.description2">Muchos de los Top 100 del mundo que viven en Argentina confían en SportsLab para mantenerse en su mejor nivel competitivo. Entre ellos se encuentran <strong>Sebastián Báez</strong>, <strong>Francisco Cerúndolo</strong>, <strong>Hugo Dellien</strong>, <strong>Juan Manuel Cerúndolo</strong>, <strong>Diego Schwartzman</strong>, <strong>Cristian Garin</strong> y <strong>Juan Martín del Potro</strong>, consolidando su reputación como el centro de preparación física líder del país.</p>
                         <div class="partner-features">
                             <div class="feature-tag">
                                 <i class="fas fa-dumbbell"></i>
-                                <span>Preparación Física</span>
+                                <span data-translate="partners.sportslab.features.physical">Preparación Física</span>
                             </div>
                             <div class="feature-tag">
                                 <i class="fas fa-microscope"></i>
-                                <span>Análisis Científico</span>
+                                <span data-translate="partners.sportslab.features.analysis">Análisis Científico</span>
                             </div>
                             <div class="feature-tag">
                                 <i class="fas fa-shield-alt"></i>
-                                <span>Prevención de Lesiones</span>
+                                <span data-translate="partners.sportslab.features.injury">Prevención de Lesiones</span>
                             </div>
                         </div>
                     </div>
@@ -241,10 +262,14 @@
 
     <!-- Services Section -->
     <section id="servicios" class="services-section">
+        <div class="services-background">
+            <div class="services-image-bg"></div>
+            <div class="services-overlay"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Servicios</h2>
-                <p>Todo lo que necesitas para convertirte en profesional</p>
+                <h2 data-translate="services.title">Nuestros Servicios</h2>
+                <p data-translate="services.subtitle">Todo lo que necesitas para convertirte en profesional</p>
             </div>
             
             <div class="services-grid">
@@ -252,92 +277,145 @@
                     <div class="service-icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
-                    <h3>Entrenamiento Intensivo Profesional</h3>
-                    <p>Programas de entrenamiento de tenis y físico diseñados específicamente para el desarrollo profesional.</p>
+                    <h3 data-translate="services.training.title">Entrenamiento Intensivo Profesional</h3>
+                    <p data-translate="services.training.description">Programas de entrenamiento de tenis y físico diseñados específicamente para el desarrollo profesional.</p>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
-                    <h3>Evaluaciones Físicas</h3>
-                    <p>Evaluaciones médicas y físicas regulares para optimizar el rendimiento y prevenir lesiones.</p>
+                    <h3 data-translate="services.evaluation.title">Evaluaciones Físicas</h3>
+                    <p data-translate="services.evaluation.description">Evaluaciones médicas y físicas regulares para optimizar el rendimiento y prevenir lesiones.</p>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-user-tie"></i>
                     </div>
-                    <h3>Asesoramiento Personal</h3>
-                    <p>Un mentor personal te acompañará durante todo el proceso de desarrollo.</p>
+                    <h3 data-translate="services.mentoring.title">Asesoramiento Personal</h3>
+                    <p data-translate="services.mentoring.description">Un mentor personal te acompañará durante todo el proceso de desarrollo.</p>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Seguimiento de Progreso</h3>
-                    <p>Reportes regulares del avance deportivo y académico de tu hijo.</p>
+                    <h3 data-translate="services.progress.title">Seguimiento de Progreso</h3>
+                    <p data-translate="services.progress.description">Reportes regulares del avance deportivo y académico de tu hijo.</p>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <h3>Soporte 24/7</h3>
-                    <p>Asistencia completa durante toda la estadía en el extranjero.</p>
+                    <h3 data-translate="services.support.title">Soporte 24/7</h3>
+                    <p data-translate="services.support.description">Asistencia completa durante toda la estadía en el extranjero.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="contact-section">
+    <!-- Application Section -->
+    <section id="contacto" class="application-section">
+        <div class="application-background">
+            <div class="application-image-bg"></div>
+            <div class="application-overlay"></div>
+        </div>
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>¿Listo para comenzar tu carrera profesional?</h2>
-                    <p>Contáctanos para más información sobre nuestros programas y cómo podemos ayudarte a alcanzar tus metas.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 561 376 4688</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>infoglobaltennis14@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Buenos Aires, Argentina</span>
-                        </div>
+            <div class="application-content">
+                <div class="application-header">
+                    <div class="application-icon">
+                        <i class="fas fa-trophy"></i>
                     </div>
+                    <h2 data-translate="contact.title">¿Listo para comenzar tu carrera profesional?</h2>
+                    <p data-translate="contact.subtitle">Solicita tu programa y únete a los mejores jugadores del mundo. Proceso de admisión personalizado y acompañamiento completo.</p>
                 </div>
                 
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nombre completo" required>
+                <div class="application-form-horizontal">
+                    <div class="form-header-horizontal">
+                        <h3>Solicitud de Programa</h3>
+                        <p>Completa el formulario y comienza tu camino al éxito profesional</p>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                    
+                    <form class="horizontal-form" action="https://formspree.io/f/meolnnra" method="POST">
+                        <input type="hidden" name="_subject" value="Nueva Solicitud de Programa - Global Tennis Hub">
+                        <input type="hidden" name="_next" value="#contacto">
+                        <div class="form-grid-horizontal">
+                            <div class="form-group-horizontal">
+                                <label>Nombre completo</label>
+                                <input type="text" name="nombre" placeholder="Tu nombre completo" data-translate-placeholder="form.name" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="tu@email.com" data-translate-placeholder="form.email" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Teléfono</label>
+                                <input type="tel" name="telefono" placeholder="+1 234 567 8900" data-translate-placeholder="form.phone" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Edad</label>
+                                <input type="number" name="edad" placeholder="18" data-translate-placeholder="form.age" min="12" max="25" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Experiencia en tenis</label>
+                                <input type="text" name="experiencia" placeholder="5 años" data-translate-placeholder="form.experience" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Nacionalidad</label>
+                                <input type="text" name="nacionalidad" placeholder="Tu país" data-translate-placeholder="form.nationality" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Fecha de inicio</label>
+                                <input type="date" name="fecha_inicio" data-translate-placeholder="form.startDate" required>
+                            </div>
+                            
+                            <div class="form-group-horizontal">
+                                <label>Programa de interés</label>
+                                <select name="programa" required>
+                                    <option value="" data-translate="form.selectProgram">Selecciona un programa</option>
+                                    <option value="2-semanas" data-translate="form.programs.2weeks">2 Semanas - Programa Intensivo</option>
+                                    <option value="1-mes" data-translate="form.programs.1month">1 Mes - Programa Premium</option>
+                                    <option value="2-meses" data-translate="form.programs.2months">2 Meses - Programa Elite</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group-horizontal full-width">
+                                <label>Objetivos deportivos y experiencia</label>
+                                <textarea name="objetivos" placeholder="Describe tu nivel actual, objetivos, torneos jugados, y cualquier información relevante para tu proceso de admisión..." data-translate-placeholder="form.admission" rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-submit-horizontal">
+                            <button type="submit" class="btn btn-application-horizontal" data-translate="form.submit">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Solicitar Programa</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info-horizontal">
+                    <div class="contact-item-horizontal">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 561 376 4688</span>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Teléfono" required>
+                    <div class="contact-item-horizontal">
+                        <i class="fas fa-envelope"></i>
+                        <span>infoglobaltennis14@gmail.com</span>
                     </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Selecciona un programa</option>
-                            <option value="2-semanas">2 Semanas - Programa Intensivo</option>
-                            <option value="1-mes">1 Mes</option>
-                            <option value="2-meses">2 Meses - Programa Elite</option>
-                        </select>
+                    <div class="contact-item-horizontal">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Buenos Aires, Argentina</span>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="Cuéntanos sobre tus objetivos deportivos" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
@@ -349,12 +427,10 @@
                 <div class="footer-logo">
                     <span>Global Tennis Hub</span>
                 </div>
-                <p>&copy; 2025 Global Tennis Hub. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Global Tennis Hub. <span data-translate="footer.rights">Todos los derechos reservados.</span></p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/globaltennishub" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/15613764688" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
