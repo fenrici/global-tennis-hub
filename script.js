@@ -1,16 +1,20 @@
 // Internationalization (i18n) Setup
 const translations = {
     es: {
+        // Page Title
+        'page.title': 'Global Tennis Hub - Academias de Tenis Argentina y Estados Unidos',
+        
         // Navigation
         'nav.home': 'Inicio',
         'nav.argentina': 'Argentina',
+        'nav.usa': 'Estados Unidos',
         'nav.services': 'Servicios',
         'nav.contact': 'Contacto',
         
         // Hero Section
         'hero.title1': 'Convierte tu pasión en',
         'hero.title2': 'profesión',
-        'hero.subtitle': 'Llevamos jóvenes talentos a las mejores academias de tenis de Argentina. Todo incluido para que te enfoques solo en tu desarrollo profesional.',
+        'hero.subtitle': 'Llevamos jóvenes talentos a las mejores academias de tenis de Argentina y Estados Unidos. Todo incluido para que te enfoques solo en tu desarrollo profesional.',
         'hero.stats.players': 'Jugadores',
         'hero.stats.years': 'Años',
         'hero.stats.success': 'Éxito',
@@ -19,6 +23,10 @@ const translations = {
         // Argentina Section
         'argentina.title': 'Programa Argentina - Blengino Academy',
         'argentina.subtitle': 'Entrenamiento profesional en la Academia Blengino con preparación física en SportsLab',
+        
+        // USA Section
+        'usa.title': 'Programa Estados Unidos - ONE Tennis Academy',
+        'usa.subtitle': 'Entrenamiento profesional en Boca Raton, Florida - Academia de Alto Rendimiento con 12 canchas de arcilla y 4 canchas duras',
         
         // Programs
         'programs.2weeks.title': '2 Semanas',
@@ -44,6 +52,33 @@ const translations = {
         'programs.features.hours110': 'Programa integral de 110 horas',
         'programs.features.hours220': 'Programa integral de 220 horas',
         
+        // USA Programs
+        'usa.shortterm.title': 'Paquetes Cortos',
+        'usa.shortterm.subtitle': 'Programa Flexible',
+        'usa.monthly.title': 'Mensual Ilimitado',
+        'usa.monthly.subtitle': 'Programa Premium',
+        'usa.yearly.title': 'Anual Ilimitado',
+        'usa.yearly.subtitle': 'Programa Elite',
+        
+        // USA Features
+        'usa.features.tennis': 'Entrenamiento de tenis en ONE Tennis Academy',
+        'usa.features.flexible': 'Elige entre día completo y medio día',
+        'usa.features.5days': '5 días a la semana',
+        'usa.features.private': 'Clases privadas disponibles',
+        'usa.features.boarding': 'Alojamiento disponible',
+        'usa.features.mobility': 'Sesiones de movilidad y estiramiento',
+        'usa.features.physio': 'Fisioterapia y recuperación',
+        'usa.features.courts': '12 canchas de arcilla + 4 canchas duras',
+        'usa.features.allcamps': 'Todos los campamentos incluidos',
+        'usa.features.4htennis': '4 horas de tenis por día',
+        'usa.features.2hfitness': '2 horas de fitness por día',
+        'usa.features.1hfitness': '1 hora de fitness por día',
+        'usa.features.12installments': 'Pago en 12 cuotas mensuales',
+        'usa.features.scan': 'Escaneo corporal completo con reporte',
+        'usa.features.calendar': 'Calendario de torneos',
+        'usa.features.coaching': 'Coaching de torneos según calendario',
+        'usa.features.discount': '10% descuento en todos los eventos',
+        
         // Partners
         'partners.title': 'Nuestros Socios Estratégicos',
         'partners.subtitle': 'Trabajamos con las mejores instituciones para garantizar tu desarrollo profesional',
@@ -59,6 +94,12 @@ const translations = {
         'partners.sportslab.features.physical': 'Preparación Física',
         'partners.sportslab.features.analysis': 'Análisis Científico',
         'partners.sportslab.features.injury': 'Prevención de Lesiones',
+        'partners.one.title': 'ONE Tennis Academy',
+        'partners.one.description1': 'ONE Tennis Academy es una ACADEMIA DE TENIS DE ALTO RENDIMIENTO ubicada en BOCA RATON, FL. Con 12 canchas de arcilla, 4 canchas duras, gimnasio y área de césped, canchas de pádel y pickleball, ofrecemos entrenamiento profesional para jugadores que quieren dar el siguiente paso en su desarrollo y entrenar en un ambiente competitivo.',
+        'partners.one.description2': 'Desde 2020, ONE Tennis ha recibido atletas de 37 países y ha sido sede de varios torneos nacionales e internacionales junior y profesionales. Nuestra filosofía se resume en: "Estamos listos para tu viaje. ¿Lo estás tú?"',
+        'partners.one.features.performance': 'Alto Rendimiento',
+        'partners.one.features.international': 'Internacional',
+        'partners.one.features.competitive': 'Competitivo',
         
         // Services
         'services.title': 'Nuestros Servicios',
@@ -79,17 +120,34 @@ const translations = {
         'contact.subtitle': 'Contáctanos para más información sobre nuestros programas y cómo podemos ayudarte a alcanzar tus metas.',
         
         // Form
+        'form.title': 'Solicitud de Programa',
+        'form.subtitle': 'Completa el formulario y comienza tu camino al éxito profesional',
+        'form.emailSubject': 'Nueva Solicitud de Programa - Global Tennis Hub',
         'form.name': 'Nombre completo',
+        'form.nameLabel': 'Nombre completo',
         'form.email': 'Email',
+        'form.emailLabel': 'Email',
         'form.phone': 'Teléfono',
+        'form.phoneLabel': 'Teléfono',
         'form.startDate': 'Fecha de inicio deseada',
+        'form.startDateLabel': 'Fecha de inicio',
         'form.age': 'Edad',
+        'form.ageLabel': 'Edad',
         'form.experience': 'Años de experiencia en tenis',
+        'form.experienceLabel': 'Experiencia en tenis',
         'form.nationality': 'Nacionalidad',
+        'form.nationalityLabel': 'Nacionalidad',
+        'form.programInterest': 'Programa de interés',
+        'form.objectivesLabel': 'Objetivos deportivos y experiencia',
         'form.selectProgram': 'Selecciona un programa',
+        'form.optgroup.argentina': 'Argentina - Blengino Academy',
+        'form.optgroup.usa': 'Estados Unidos - ONE Tennis Academy',
         'form.programs.2weeks': '2 Semanas - Programa Intensivo',
         'form.programs.1month': '1 Mes - Programa Premium',
         'form.programs.2months': '2 Meses - Programa Elite',
+        'form.programs.usa.shortterm': 'Paquetes Cortos - Programa Flexible',
+        'form.programs.usa.monthly': 'Mensual Ilimitado - Programa Premium',
+        'form.programs.usa.yearly': 'Anual Ilimitado - Programa Elite',
         'form.admission': 'Cuéntanos sobre tu proceso de admisión y objetivos deportivos',
         'form.submit': 'Solicitar Programa',
         
@@ -97,16 +155,20 @@ const translations = {
         'footer.rights': 'Todos los derechos reservados.'
     },
     en: {
+        // Page Title
+        'page.title': 'Global Tennis Hub - Tennis Academies Argentina and United States',
+        
         // Navigation
         'nav.home': 'Home',
         'nav.argentina': 'Argentina',
+        'nav.usa': 'United States',
         'nav.services': 'Services',
         'nav.contact': 'Contact',
         
         // Hero Section
         'hero.title1': 'Turn your passion into',
         'hero.title2': 'profession',
-        'hero.subtitle': 'We take young talents to the best tennis academies in Argentina. Everything included so you can focus only on your professional development.',
+        'hero.subtitle': 'We take young talents to the best tennis academies in Argentina and United States. Everything included so you can focus only on your professional development.',
         'hero.stats.players': 'Players',
         'hero.stats.years': 'Years',
         'hero.stats.success': 'Success',
@@ -115,6 +177,10 @@ const translations = {
         // Argentina Section
         'argentina.title': 'Argentina Program - Blengino Academy',
         'argentina.subtitle': 'Professional training at Blengino Academy with physical preparation at SportsLab',
+        
+        // USA Section
+        'usa.title': 'United States Program - ONE Tennis Academy',
+        'usa.subtitle': 'Professional training in Boca Raton, Florida - High Performance Academy with 12 clay courts and 4 hard courts',
         
         // Programs
         'programs.2weeks.title': '2 Weeks',
@@ -140,6 +206,33 @@ const translations = {
         'programs.features.hours110': 'Comprehensive 110-hour program',
         'programs.features.hours220': 'Comprehensive 220-hour program',
         
+        // USA Programs
+        'usa.shortterm.title': 'Short-Term Packages',
+        'usa.shortterm.subtitle': 'Flexible Program',
+        'usa.monthly.title': 'Unlimited Monthly',
+        'usa.monthly.subtitle': 'Premium Program',
+        'usa.yearly.title': 'Unlimited Yearly',
+        'usa.yearly.subtitle': 'Elite Program',
+        
+        // USA Features
+        'usa.features.tennis': 'Tennis training at ONE Tennis Academy',
+        'usa.features.flexible': 'Choose between full day and half day',
+        'usa.features.5days': '5 days a week',
+        'usa.features.private': 'Private lessons available',
+        'usa.features.boarding': 'Boarding available',
+        'usa.features.mobility': 'Mobility and stretching sessions',
+        'usa.features.physio': 'Physiotherapy and recovery',
+        'usa.features.courts': '12 clay courts + 4 hard courts',
+        'usa.features.allcamps': 'All camps included',
+        'usa.features.4htennis': '4 hours of tennis per day',
+        'usa.features.2hfitness': '2 hours of fitness per day',
+        'usa.features.1hfitness': '1 hour of fitness per day',
+        'usa.features.12installments': 'Pay in 12 monthly installments',
+        'usa.features.scan': 'Full body computer scan with report',
+        'usa.features.calendar': 'Tournament calendar',
+        'usa.features.coaching': 'Tournament coaching according to calendar',
+        'usa.features.discount': '10% discount on all events',
+        
         // Partners
         'partners.title': 'Our Strategic Partners',
         'partners.subtitle': 'We work with the best institutions to guarantee your professional development',
@@ -155,6 +248,12 @@ const translations = {
         'partners.sportslab.features.physical': 'Physical Preparation',
         'partners.sportslab.features.analysis': 'Scientific Analysis',
         'partners.sportslab.features.injury': 'Injury Prevention',
+        'partners.one.title': 'ONE Tennis Academy',
+        'partners.one.description1': 'ONE Tennis Academy is a HIGH PERFORMANCE TENNIS ACADEMY located in BOCA RATON, FL. With 12 clay courts, 4 hard courts, gym and turf area, padel and pickleball courts, we offer professional training for players who want to take the next step in their development and train in a competitive environment.',
+        'partners.one.description2': 'Since 2020, ONE Tennis has welcomed athletes from 37 countries and has been a hosting site for several national and international junior and professional tournaments. Our philosophy is summarized in: "We are ready for your journey. Are you?"',
+        'partners.one.features.performance': 'High Performance',
+        'partners.one.features.international': 'International',
+        'partners.one.features.competitive': 'Competitive',
         
         // Services
         'services.title': 'Our Services',
@@ -175,17 +274,34 @@ const translations = {
         'contact.subtitle': 'Contact us for more information about our programs and how we can help you achieve your goals.',
         
         // Form
+        'form.title': 'Program Application',
+        'form.subtitle': 'Complete the form and begin your path to professional success',
+        'form.emailSubject': 'New Program Application - Global Tennis Hub',
         'form.name': 'Full name',
+        'form.nameLabel': 'Full name',
         'form.email': 'Email',
+        'form.emailLabel': 'Email',
         'form.phone': 'Phone',
+        'form.phoneLabel': 'Phone',
         'form.startDate': 'Desired start date',
+        'form.startDateLabel': 'Start date',
         'form.age': 'Age',
+        'form.ageLabel': 'Age',
         'form.experience': 'Years of tennis experience',
+        'form.experienceLabel': 'Tennis experience',
         'form.nationality': 'Nationality',
+        'form.nationalityLabel': 'Nationality',
+        'form.programInterest': 'Program of interest',
+        'form.objectivesLabel': 'Sports goals and experience',
         'form.selectProgram': 'Select a program',
+        'form.optgroup.argentina': 'Argentina - Blengino Academy',
+        'form.optgroup.usa': 'United States - ONE Tennis Academy',
         'form.programs.2weeks': '2 Weeks - Intensive Program',
         'form.programs.1month': '1 Month - Premium Program',
         'form.programs.2months': '2 Months - Elite Program',
+        'form.programs.usa.shortterm': 'Short-Term Packages - Flexible Program',
+        'form.programs.usa.monthly': 'Unlimited Monthly - Premium Program',
+        'form.programs.usa.yearly': 'Unlimited Yearly - Elite Program',
         'form.admission': 'Tell us about your admission process and sports goals',
         'form.submit': 'Apply for Program',
         
@@ -206,13 +322,25 @@ function updateContent() {
     // Update elements with data-translate attribute
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
-        element.textContent = translate(key);
+        if (element.tagName === 'TITLE') {
+            element.textContent = translate(key);
+        } else if (element.tagName === 'OPTGROUP') {
+            element.label = translate(key);
+        } else {
+            element.textContent = translate(key);
+        }
     });
     
     // Update elements with data-translate-placeholder attribute
     document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
         const key = element.getAttribute('data-translate-placeholder');
         element.placeholder = translate(key);
+    });
+    
+    // Update elements with data-translate-value attribute
+    document.querySelectorAll('[data-translate-value]').forEach(element => {
+        const key = element.getAttribute('data-translate-value');
+        element.value = translate(key);
     });
     
     // Update HTML lang attribute
