@@ -625,4 +625,23 @@ window.addEventListener('load', () => {
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
     initializeLanguage();
+    
+    // Ensure page starts at top on load (especially on mobile)
+    if (window.location.hash === '' || window.location.hash === '#') {
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
+    }
+});
+
+// Force scroll to top on page reload
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+
+// Also reset on page show (for back/forward navigation)
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted || performance.navigation.type === 2) {
+        window.scrollTo(0, 0);
+    }
 });
