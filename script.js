@@ -22,7 +22,7 @@ const translations = {
         
         // Argentina Section
         'argentina.title': 'Programa Argentina - Blengino Academy',
-        'argentina.subtitle': 'Entrenamiento profesional en la Academia Blengino con preparación física en SportsLab',
+        'argentina.subtitle': 'Entrenamiento profesional en la Academia Blengino con entrenamiento físico',
         
         // USA Section
         'usa.title': 'Programa Estados Unidos - ONE Tennis Academy',
@@ -40,7 +40,7 @@ const translations = {
         
         // Program Features
         'programs.features.tennis': 'Entrenamiento de tenis en Blengino Academy',
-        'programs.features.physical': 'Entrenamiento físico en SportsLab',
+        'programs.features.physical': 'Entrenamiento físico personalizado',
         'programs.features.accommodation': 'Alojamiento en Palermo/Núñez',
         'programs.features.coaching': 'Coaching de tiempo completo',
         'programs.features.tournaments': 'Preparación para torneos',
@@ -180,7 +180,7 @@ const translations = {
         
         // Argentina Section
         'argentina.title': 'Argentina Program - Blengino Academy',
-        'argentina.subtitle': 'Professional training at Blengino Academy with physical preparation at SportsLab',
+        'argentina.subtitle': 'Professional training at Blengino Academy with physical training',
         
         // USA Section
         'usa.title': 'United States Program - ONE Tennis Academy',
@@ -198,7 +198,7 @@ const translations = {
         
         // Program Features
         'programs.features.tennis': 'Tennis training at Blengino Academy',
-        'programs.features.physical': 'Physical training at SportsLab',
+        'programs.features.physical': 'Personalized physical training',
         'programs.features.accommodation': 'Accommodation in Palermo/Núñez',
         'programs.features.coaching': 'Full-time coaching',
         'programs.features.tournaments': 'Tournament preparation',
