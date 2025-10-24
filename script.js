@@ -122,6 +122,8 @@ const translations = {
         // Contact
         'contact.title': '¿Listo para comenzar tu carrera profesional?',
         'contact.subtitle': 'Contáctanos para más información sobre nuestros programas y cómo podemos ayudarte a alcanzar tus metas.',
+        'contact.usa.title': 'Estados Unidos',
+        'contact.argentina.title': 'Argentina',
         
         // Form
         'form.title': 'Solicitud de Programa',
@@ -280,6 +282,8 @@ const translations = {
         // Contact
         'contact.title': 'Ready to start your professional career?',
         'contact.subtitle': 'Contact us for more information about our programs and how we can help you achieve your goals.',
+        'contact.usa.title': 'United States',
+        'contact.argentina.title': 'Argentina',
         
         // Form
         'form.title': 'Program Application',

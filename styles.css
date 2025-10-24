@@ -1619,14 +1619,29 @@ body {
 .contact-info-horizontal {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
     flex-wrap: wrap;
+}
+
+.contact-section {
+    text-align: center;
+    min-width: 250px;
+}
+
+.contact-section h4 {
+    color: #ffd700;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .contact-item-horizontal {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 20px;
     color: #e0e0e0;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -2199,7 +2214,11 @@ body {
     }
     
     .contact-info-horizontal {
-        gap: 40px;
+        gap: 50px;
+    }
+    
+    .contact-section {
+        min-width: 200px;
     }
     
     .academy-info {
@@ -2312,8 +2331,17 @@ body {
     
     .contact-info-horizontal {
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         text-align: center;
+    }
+    
+    .contact-section {
+        min-width: auto;
+    }
+    
+    .contact-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
     }
     
     .academy-info {
