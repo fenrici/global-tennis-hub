@@ -2,19 +2,20 @@
 const translations = {
     es: {
         // Page Title
-        'page.title': 'Global Tennis Hub - Academias de Tenis Argentina y Estados Unidos',
+        'page.title': 'Global Tennis Hub - Academias de Tenis Argentina, Estados Unidos y España',
         
         // Navigation
         'nav.home': 'Inicio',
         'nav.argentina': 'Argentina',
         'nav.usa': 'Estados Unidos',
+        'nav.spain': 'España',
         'nav.services': 'Servicios',
         'nav.contact': 'Contacto',
         
         // Hero Section
         'hero.title1': 'Convierte tu pasión en',
         'hero.title2': 'profesión',
-        'hero.subtitle': 'Llevamos jóvenes talentos a las mejores academias de tenis de Argentina y Estados Unidos. Todo incluido para que te enfoques solo en tu desarrollo profesional.',
+        'hero.subtitle': 'Llevamos jóvenes talentos a las mejores academias de tenis de Argentina, Estados Unidos y España. Todo incluido para que te enfoques solo en tu desarrollo profesional.',
         'hero.stats.players': 'Jugadores',
         'hero.stats.years': 'Años',
         'hero.stats.success': 'Éxito',
@@ -27,6 +28,28 @@ const translations = {
         // USA Section
         'usa.title': 'Programa Estados Unidos - ONE Tennis Academy',
         'usa.subtitle': 'Entrenamiento profesional en Boca Raton, Florida - Academia de Alto Rendimiento con 12 canchas de arcilla y 4 canchas duras',
+        
+        // Spain Section
+        'spain.title': 'Programa España - Proab Academy',
+        'spain.subtitle': 'Entrenamiento en Proab Academy - 30 años de experiencia formando jugadores top 100 ATP/WTA',
+        'spain.2weeks.title': '2 Semanas',
+        'spain.2weeks.subtitle': 'Programa Intensivo',
+        'spain.1month.title': '1 Mes',
+        'spain.1month.subtitle': 'Programa Premium',
+        'spain.3months.title': '3 Meses',
+        'spain.3months.subtitle': 'Programa Elite',
+        'spain.1year.title': '1 Año',
+        'spain.1year.subtitle': 'Programa Máximo',
+        'spain.features.experience': '30 años de experiencia formando jugadores top 100 ATP/WTA',
+        'spain.features.worldwide': 'Entrenamiento de tenis de alto rendimiento mundial',
+        'spain.features.personalized': 'Entreno personalizado',
+        'spain.features.coaching': 'Acompañamiento y entrenamiento en las competiciones',
+        'spain.features.accommodation': 'Alojamiento premium',
+        'spain.features.meals': 'Comidas incluidas',
+        'spain.features.tennis': '3:30 horas de tenis por día',
+        'spain.features.physical': '2 horas de físico por día',
+        'spain.features.calendar': 'Calendario de torneos',
+        'spain.features.followup': 'Seguimiento semanal con el jugador y los entrenadores',
         
         // Programs
         'programs.2weeks.title': '2 Semanas',
@@ -124,6 +147,7 @@ const translations = {
         'contact.subtitle': 'Contáctanos para más información sobre nuestros programas y cómo podemos ayudarte a alcanzar tus metas.',
         'contact.usa.title': 'Estados Unidos',
         'contact.argentina.title': 'Argentina',
+        'contact.barcelona.title': 'España',
         
         // Form
         'form.title': 'Solicitud de Programa',
@@ -148,12 +172,17 @@ const translations = {
         'form.selectProgram': 'Selecciona un programa',
         'form.optgroup.argentina': 'Argentina - Blengino Academy',
         'form.optgroup.usa': 'Estados Unidos - ONE Tennis Academy',
+        'form.optgroup.spain': 'España - Proab Academy',
         'form.programs.2weeks': '2 Semanas - Programa Intensivo',
         'form.programs.1month': '1 Mes - Programa Premium',
         'form.programs.2months': '2 Meses - Programa Elite',
         'form.programs.usa.shortterm': 'Paquetes Cortos - Programa Flexible',
         'form.programs.usa.monthly': 'Mensual Ilimitado - Programa Premium',
         'form.programs.usa.yearly': 'Anual Ilimitado - Programa Elite',
+        'form.programs.spain.2weeks': '2 Semanas - Programa Intensivo',
+        'form.programs.spain.1month': '1 Mes - Programa Premium',
+        'form.programs.spain.3months': '3 Meses - Programa Elite',
+        'form.programs.spain.1year': '1 Año - Programa Máximo',
         'form.admission': 'Cuéntanos sobre tu proceso de admisión y objetivos deportivos',
         'form.submit': 'Solicitar Programa',
         
@@ -162,19 +191,20 @@ const translations = {
     },
     en: {
         // Page Title
-        'page.title': 'Global Tennis Hub - Tennis Academies Argentina and United States',
+        'page.title': 'Global Tennis Hub - Tennis Academies Argentina, United States and Spain',
         
         // Navigation
         'nav.home': 'Home',
         'nav.argentina': 'Argentina',
         'nav.usa': 'United States',
+        'nav.spain': 'Spain',
         'nav.services': 'Services',
         'nav.contact': 'Contact',
         
         // Hero Section
         'hero.title1': 'Turn your passion into',
         'hero.title2': 'profession',
-        'hero.subtitle': 'We take young talents to the best tennis academies in Argentina and United States. Everything included so you can focus only on your professional development.',
+        'hero.subtitle': 'We take young talents to the best tennis academies in Argentina, United States and Spain. Everything included so you can focus only on your professional development.',
         'hero.stats.players': 'Players',
         'hero.stats.years': 'Years',
         'hero.stats.success': 'Success',
@@ -187,6 +217,28 @@ const translations = {
         // USA Section
         'usa.title': 'United States Program - ONE Tennis Academy',
         'usa.subtitle': 'Professional training in Boca Raton, Florida - High Performance Academy with 12 clay courts and 4 hard courts',
+        
+        // Spain Section
+        'spain.title': 'Spain Program - Proab Academy',
+        'spain.subtitle': 'Training at Proab Academy - 30 years of experience training top 100 ATP/WTA players',
+        'spain.2weeks.title': '2 Weeks',
+        'spain.2weeks.subtitle': 'Intensive Program',
+        'spain.1month.title': '1 Month',
+        'spain.1month.subtitle': 'Premium Program',
+        'spain.3months.title': '3 Months',
+        'spain.3months.subtitle': 'Elite Program',
+        'spain.1year.title': '1 Year',
+        'spain.1year.subtitle': 'Maximum Program',
+        'spain.features.experience': '30 years of experience training top 100 ATP/WTA players',
+        'spain.features.worldwide': 'Worldwide high performance tennis training',
+        'spain.features.personalized': 'Personalized training',
+        'spain.features.coaching': 'Support and coaching in competitions',
+        'spain.features.accommodation': 'Premium accommodation',
+        'spain.features.meals': 'Meals included',
+        'spain.features.tennis': '3:30 hours of tennis per day',
+        'spain.features.physical': '2 hours of physical training per day',
+        'spain.features.calendar': 'Tournaments calendar',
+        'spain.features.followup': 'Weekly follow-up with player and coaches',
         
         // Programs
         'programs.2weeks.title': '2 Weeks',
@@ -284,6 +336,7 @@ const translations = {
         'contact.subtitle': 'Contact us for more information about our programs and how we can help you achieve your goals.',
         'contact.usa.title': 'United States',
         'contact.argentina.title': 'Argentina',
+        'contact.barcelona.title': 'Spain',
         
         // Form
         'form.title': 'Program Application',
@@ -308,12 +361,17 @@ const translations = {
         'form.selectProgram': 'Select a program',
         'form.optgroup.argentina': 'Argentina - Blengino Academy',
         'form.optgroup.usa': 'United States - ONE Tennis Academy',
+        'form.optgroup.spain': 'Spain - Proab Academy',
         'form.programs.2weeks': '2 Weeks - Intensive Program',
         'form.programs.1month': '1 Month - Premium Program',
         'form.programs.2months': '2 Months - Elite Program',
         'form.programs.usa.shortterm': 'Short-Term Packages - Flexible Program',
         'form.programs.usa.monthly': 'Unlimited Monthly - Premium Program',
         'form.programs.usa.yearly': 'Unlimited Yearly - Elite Program',
+        'form.programs.spain.2weeks': '2 Weeks - Intensive Program',
+        'form.programs.spain.1month': '1 Month - Premium Program',
+        'form.programs.spain.3months': '3 Months - Elite Program',
+        'form.programs.spain.1year': '1 Year - Maximum Program',
         'form.admission': 'Tell us about your admission process and sports goals',
         'form.submit': 'Apply for Program',
         

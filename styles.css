@@ -640,6 +640,11 @@ body {
     overflow: hidden;
 }
 
+.spain-section {
+    position: relative;
+    overflow: hidden;
+}
+
 .program-background {
     position: absolute;
     top: 0;
@@ -705,6 +710,21 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.spain-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.spain-section .section-header h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.spain-section .section-header p {
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .italia-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     color: #333;
@@ -737,6 +757,11 @@ body {
 .usa-flag {
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #dc2626 100%);
     box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.spain-flag {
+    background: linear-gradient(135deg, #c60b1e 0%, #ffc400 50%, #c60b1e 100%);
+    box-shadow: 0 8px 25px rgba(198, 11, 30, 0.3);
 }
 
 .section-header h2 {
